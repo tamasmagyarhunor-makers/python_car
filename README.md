@@ -8,3 +8,7 @@ In your terminal, run the following code:
 >>> db.create_all()
 ```
 
+In your terminal, run the following code to start your Flask server:
+```
+>>> python api.py
+```
