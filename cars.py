@@ -13,3 +13,13 @@ class Car(db.Model):
     fuel_type = db.Column(db.String(20), nullable=False)
     gearbox = db.Column(db.String(20), nullable=False)
     year = db.Column(db.Date, nullable=False)
+
+    def json(self):
+        return {
+            'id': self.id,
+            'make': self.make,
+            'model': self.model,
+            'fuel_type': self.fuel_type,
+            'gearbox': self.gearbox,
+            'year': self.year
+        } # this method will convert our output to json
