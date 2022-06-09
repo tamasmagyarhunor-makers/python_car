@@ -40,10 +40,7 @@ def add_car():
         request_data["gearbox"],
         request_data["year"]
     )
-    response = Response({
-        'success': True,
-        'message': 'Car created successfully'
-    }, 201, mimetype='application/json')
+    response = Response({'Car created successfully'}, 201, mimetype='application/json')
     return response
 
 # route to update a car by id
