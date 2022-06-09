@@ -12,7 +12,7 @@ class Car(db.Model):
     model = db.Column(db.String(20), nullable=False)
     fuel_type = db.Column(db.String(20), nullable=False)
     gearbox = db.Column(db.String(20), nullable=False)
-    year = db.Column(db.Date, nullable=False)
+    year = db.Column(db.String(20), nullable=False)
 
     def json(self):
         return {
