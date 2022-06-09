@@ -56,20 +56,15 @@ def update_car(id):
         request_data["gearbox"],
         request_data["year"]
     )
-    response = Response({
-        'success': True,
-        'message': 'Car updated successfully'
-    }, status=200, mimetype='application/json')
+    response = Response({ 'Car updated successfully' }, status=200, mimetype='application/json')
+    return response
 
 # route to delete a car by id
 @app.route('/cars/<int:id>', methods=['DELETE'])
 def remove_car(id):
     '''Delete a Car'''
     Car.delete_car(id)
-    response = Response({
-        'success': True,
-        'message': 'Car deleted'
-    }, status=200, mimetype='application/json')
+    response = Response({ 'Car deleted' }, status=200, mimetype='application/json')
     return response
 
 if __name__ == "__main__":
