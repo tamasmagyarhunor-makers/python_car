@@ -21,6 +21,16 @@ In your terminal, run the following code to start your Flask server:
 ```
 
 test the api using Postman, open the database with DBeaver to see the cars table and its data.
+
+HTTP GET request => http://127.0.0.1:1234
+```
+{
+    "success": true,
+    "message": "our API works"
+}
+```
+
+
 HTTP GET request => http://127.0.0.1:1234/cars
 ```
 {
