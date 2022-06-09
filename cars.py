@@ -23,3 +23,17 @@ class Car(db.Model):
             'gearbox': self.gearbox,
             'year': self.year
         } # this method will convert our output to json
+
+    def add_car(_make, _model, _fuel_type, _gerbox, _year):
+        '''CREATE method'''
+        # create an instance of Car constructor
+        new_car = Car(
+            make = _make,
+            model = _model,
+            fuel_type = _fuel_type, 
+            gearbox = _gerbox,
+            year = _year
+        )
+
+        db.session.add(new_car) # add movie to db session
+        db.session.commit() # commit changes to session
