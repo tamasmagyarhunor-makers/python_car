@@ -39,7 +39,7 @@ HTTP GET request => http://127.0.0.1:1234/cars
         {
             "id": 1,
             "make": "Porsche",
-            "model": "718 Cayman GT4",
+            "model": "718 Cayman GT4RS",
             "fuel_type": "petrol",
             "gearbox": "manual",
             "year": "2022-06-10 00:15:13"
