@@ -53,6 +53,7 @@ class Car(db.Model):
         car_to_update.model = _model
         car_to_update.fuel_type = _fuel_type
         car_to_update.gearbox = _gearbox
+        car_to_update.year = _year
         db.session.commit()
 
     def delete_car(_id):
