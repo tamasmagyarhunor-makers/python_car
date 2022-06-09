@@ -32,13 +32,13 @@ def get_car_by_id(id):
 @app.route('/cars', methods=['POST'])
 def add_car():
     '''Add new Car'''
-    request = request.get_json() # get request data from client
+    request_data = request.get_json() # get request data from client
     Car.add_car(
-        request["make"],
-        request["model"],
-        request["fuel_type"],
-        request["gearbox"],
-        request["year"]
+        request_data["make"],
+        request_data["model"],
+        request_data["fuel_type"],
+        request_data["gearbox"],
+        request_data["year"]
     )
     response = Response({
         'success': True,
@@ -50,14 +50,14 @@ def add_car():
 @app.route('/cars/<int:id>', methods=['PUT'])
 def update_car(id):
     '''Update a Car'''
-    request = request.get_json()
+    request_data = request.get_json()
     Car.update_car(
         id,
-        request["make"],
-        request["model"],
-        request["fuel_type"],
-        request["gearbox"],
-        request["year"]
+        request_data["make"],
+        request_data["model"],
+        request_data["fuel_type"],
+        request_data["gearbox"],
+        request_data["year"]
     )
     response = Response({
         'success': True,
