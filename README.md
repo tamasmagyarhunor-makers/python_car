@@ -64,4 +64,23 @@ challenge:
 * improve code by some error handling
 * add a new child relationship to the Car ( like wheel for example ) or add an Owner and the car as its child relationship. 
 * create a route/controller/model logic to be able to send a GET request to /cars/car_id_here/owner to get the owner record on a car record.
+```
+{
+"success": true,
+    "cars": [
+        {
+            "id": 1,
+            "make": "Porsche",
+            "model": "718 Cayman GT4RS",
+            "fuel_type": "petrol",
+            "gearbox": "manual",
+            "year": "2022-06-10 00:15:13",
+            "owner": {
+                "id": 1,
+                "name": "Magyar-Hunor Tamas",
+                "email": "hunor@makers.tech"
+            }
+        }
+}
+```
 
