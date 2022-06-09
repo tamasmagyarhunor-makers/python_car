@@ -1,6 +1,6 @@
 # Python CRUD app with Flask, Flask_SQLAlchemy
 
-This is an extremely small API using Flask, Flask_SQLAlchemy(ORM) and a SQLite database.
+This is an extremely small API using Python3, Flask, Flask_SQLAlchemy(ORM) and a SQLite database.
 
 In your terminal, run the following code to install dependencies:
 ```
