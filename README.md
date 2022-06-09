@@ -8,7 +8,7 @@ In your terminal, run the following code to install dependencies:
 >>> pip install flask-sqlalchemy
 ```
 
-In your terminal, run the following code:
+In your terminal, run the following code to create the database and cars table and its columns
 ```
 >>> python
 >>> from movies import db
@@ -19,6 +19,34 @@ In your terminal, run the following code to start your Flask server:
 ```
 >>> python api.py
 ```
+
+test the api using Postman, open the database with DBeaver to see the cars table and its data.
+HTTP GET request => http://127.0.0.1:1234/cars
+```
+{
+    "success": true,
+    "cars": [
+        {
+            "id": 1,
+            "make": "Porsche",
+            "model": "718 Cayman GT4",
+            "fuel_type": "petrol",
+            "gearbox": "manual",
+            "year": "2022-06-10 00:15:13"
+        },
+        {
+            "id": 2,
+            "make": "Porsche",
+            "model": "911.992 GT3RS",
+            "fuel_type": "petrol",
+            "gearbox": "manual",
+            "year": "2022-06-10 00:18:13"
+        }
+    ]
+}
+```
+
+
 
 challenge: 
 lets find ways to refactor our api.py
