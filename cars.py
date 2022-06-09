@@ -35,7 +35,7 @@ class Car(db.Model):
             year = _year
         )
 
-        db.session.add(new_car) # add movie to db session
+        db.session.add(new_car) # add car to db session
         db.session.commit() # commit changes to session
 
     def get_all_cars():
