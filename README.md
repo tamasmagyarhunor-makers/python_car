@@ -61,7 +61,8 @@ HTTP GET request => http://127.0.0.1:1234/cars
 challenges: 
 * pull out controller responsibilies from our api.py
 * improve code by adding some error handling
-* add a new relationship to the Car such as an Owner and define relationship functions on the Car so that it becomes the Owners child object. 
+* add a new relationship to the Car such as an Owner and define relationship functions on the Car so that it becomes the Owners child object.
+  * you will need to create a new Owner Schema with some fields ( id, name, email is enough ) too
 * create a new endpoint to be able to send a GET request to /cars/car_id_here/owner to get the Owner record on a Car record.
 ```
 {
