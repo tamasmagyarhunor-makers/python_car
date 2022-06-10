@@ -1,6 +1,6 @@
 # Python CRUD app with Flask, Flask_SQLAlchemy
 
-This is an extremely small API using Python3, Flask, Flask_SQLAlchemy(ORM) and a SQLite database.
+## This is an extremely small API using Python3, Flask, Flask_SQLAlchemy(ORM) and a SQLite database.
 
 In your terminal, run the following code to install dependencies:
 ```
@@ -58,12 +58,11 @@ HTTP GET request => http://127.0.0.1:1234/cars
 
 
 
-challenge: 
-* lets find ways to refactor our api.py
-* pull out Controller logic
-* improve code by some error handling
-* add a new child relationship to the Car ( like wheel for example ) or add an Owner and the car as its child relationship. 
-* create a route/controller/model logic to be able to send a GET request to /cars/car_id_here/owner to get the owner record on a car record.
+challenges: 
+* pull out controller responsibilies from our api.py
+* improve code by adding some error handling
+* add a new relationship to the Car such as an Owner and define relationship functions on the Car so that it becomes the Owners child object. 
+* create a new endpoint to be able to send a GET request to /cars/car_id_here/owner to get the Owner record on a Car record.
 ```
 {
 "success": true,
