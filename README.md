@@ -67,20 +67,18 @@ challenges:
 ```
 {
 "success": true,
-    "cars": [
-        {
-            "id": 1,
-            "make": "Porsche",
-            "model": "718 Cayman GT4RS",
-            "fuel_type": "petrol",
-            "gearbox": "manual",
-            "year": "2022-06-10 00:15:13",
-            "owner": {
-                "id": 1,
-                "name": "Magyar-Hunor Tamas",
-                "email": "hunor@makers.tech"
-            }
-        }
+"car": {
+    "id": 1,
+    "make": "Porsche",
+    "model": "718 Cayman GT4RS",
+    "fuel_type": "petrol",
+    "gearbox": "manual",
+    "year": "2022-06-10 00:15:13",
+    "owner": {
+        "id": 1,
+        "name": "Magyar-Hunor Tamas",
+        "email": "hunor@makers.tech"
+    }
 }
 ```
 
